@@ -6,7 +6,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$passwordUser = "";
 $dbname = "securex_register";
 $fname = $_POST["fname"];
 $emailAddress = $_POST["emailAddress"];
@@ -26,7 +26,7 @@ echo $gender;
 echo $password;
 
 // Create connection
-$conn = new mysqli($servername, $username, $emailAddress, $phone, $acYear, $stream, $roll, $gender, $password, $dbname);
+$conn = new mysqli($servername, $username, $passwordUser,$dbname);
 
 // Check connection
 if ($conn->connect_error) {
