@@ -1,0 +1,67 @@
+/* don't need to repeatedly set font family */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+.logo-title img {
+    display: inline;
+    width: 100%;
+    max-width: 300px;
+}
+/*
+    don't write repeatitive code;
+    1. background color be different, but all buttons has color white
+    2. all buttons are rounded (border-radius)
+*/
+.buttons .btn {
+    color: #fff;
+    border-radius: 30px;
+}
+
+/*
+    saturate???
+    same as what it does in adobe photoshop ;)
+    remember hue, saturation, lightness???
+ */
+.buttons .btn:hover {
+    filter: saturate(2);
+}
+.horizontal-line {
+    margin-top: 40px!important;
+    margin-bottom: 30px!important;
+    height: 2px;
+    background: #4992D8;
+}
+.btn-login {
+    background: #1E4074;
+}
+.btn-register {
+    background: #50AB1F;
+}
+.credits .btn-group {
+    border: 1px solid #1E4074;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.credits .btn-group .btn-credit {
+    background: #1E4074;
+    color: #fff;
+}
+
+.btn-credit{
+  width: 100px;
+}
+
+.heading{
+  font-weight: 700;
+  color: #4992D8;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.img-fluid{
+  max-width: 80%!important;
+  float: right;
+}
+.container-fluid{
+  width: 80vw!important;
+}

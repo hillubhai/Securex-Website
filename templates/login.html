@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/login.css">
+
+    <title>SecureX :: Secure Your Exam</title>
+</head>
+
+<body>
+
+
+    <!-- Logo -->
+    <!--
+        * mt-5 = MarginTop x 5 (bootstrap helper class)
+     -->
+    <div class="container mt-5 ">
+        <!--
+            * logo = our custom class
+         -->
+        <div class="logo-title">
+            <img src="../assets/images/FullLogo.svg" alt="SecureX-Logo was here">
+            <h1>Login</h1>
+            <div class="w-100 horizontal-line mt-4 mb-4"></div>
+        </div>
+
+    </div>
+    <!-- Logo&Title End -->
+
+    <!--
+        Content
+            * 'contents' is our custom class
+     -->
+    <div class="container mt-3 contents">
+        <div class="row">
+          <div class="lg-6"
+          <form style="width: 500px; margin: auto">
+
+              <div class="form-group">
+                  <label for="emailAddress">Email address</label>
+                  <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter your email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="loginType" id="loginAsStudent" value="Login as Student">
+                  <label class="form-check-label" for="loginAsStudent">
+                    Login as Student
+                  </label>
+              </div>
+
+              <div class="form-check">
+                  <input class="form-check-input" type="radio" name="loginType" id="loginAsTeacher" value="Login as Teacher" >
+                  <label class="form-check-label" for="loginAsTeacher">
+                    Login as Teacher
+                  </label>
+              </div>
+
+              <div class="buttons">
+                  <input class="btn btn-login" type="submit" value="Login">
+              </div>
+
+          </form>
+
+          </div>
+                <div class="w-100 horizontal-line mt-5"></div>
+                <div class="instructions w-100 mt-4 mb-4">
+                    <span>
+                        Contact your class teacher if you have forgotten your password. <br>
+                        <b>Reset password</b> option is coming soon.
+                    </span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

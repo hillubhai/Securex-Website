@@ -1,0 +1,118 @@
+/* don't need to repeatedly set font family */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+}
+
+
+.logo-title img {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.logo-title h1 {
+    display: inline;
+    float: right;
+    color: #4992D8;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.horizontal-line{
+    height: 100px;
+}
+
+/*
+    don't write repeatitive code;
+    1. background color be different, but all buttons has color white
+    2. all buttons are rounded (border-radius)
+*/
+.buttons .btn {
+  border-radius: 30px;
+}
+
+/*
+    saturate???
+    same as what it does in adobe photoshop ;)
+    remember hue, saturation, lightness???
+ */
+.btn-login:hover {
+  color: #fff;
+  background-color: #4992D8;
+ }
+.horizontal-line {
+  height: 3px;
+  background: #4992D8;
+}
+.btn-login {
+  margin-top: 25px;
+  color: #fff;
+  background: #1E4074;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.heading{
+  font-weight: 700;
+  color: #4992D8;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.form-group,.form-check{
+  text-align: left;
+
+}
+.form-control{
+  border: 1px solid #4092D8;
+  border-radius: 30px;
+  position: relative;
+  max-width: 80%;
+  min-width: 200px;
+}
+
+.input-group{
+  margin-top: 5px;
+  border: 1px solid #4092D8;
+  border-radius: 30px;
+  max-width: 80%;
+  min-width: 200px;
+}
+
+.btn-light{
+  color: #fff;
+  background-color: #4092D8;
+}
+
+.btn-light:hover {
+  color: #fff;
+  background-color: #1E4074;
+ }
+
+#upload {
+  opacity: 0;
+}
+
+#upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.instructions{
+  text-align: center;
+}
+.footer{
+  text-align: center;
+}

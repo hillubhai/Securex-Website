@@ -1,0 +1,84 @@
+/* don't need to repeatedly set font family */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.logo-title img {
+    max-width: 300px;
+    min-width: 100px;
+}
+
+.completed img{
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+}
+.completed h1{
+  color: #4992D8;
+  font-weight: 700;
+  font-size: 31px;
+  padding-top: 30px;
+}
+.completed h3{
+  color: #4992D8;
+  font-weight: 400;
+  font-size: 23px;
+  padding-top: 20px;
+}
+
+.completed h4{
+  color: #4992D8;
+  font-weight: 400;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.logo-title h1 {
+    display: inline;
+    float: right;
+    color: #4992D8;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.horizontal-line{
+    height: 100px;
+}
+
+/*
+    don't write repeatitive code;
+    1. background color be different, but all buttons has color white
+    2. all buttons are rounded (border-radius)
+*/
+.buttons .btn {
+  border-radius: 30px;
+}
+
+/*
+    saturate???
+    same as what it does in adobe photoshop ;)
+    remember hue, saturation, lightness???
+ */
+.btn-login:hover {
+  color: #fff;
+  background-color: #4992D8;
+ }
+.horizontal-line {
+  height: 3px;
+  background: #4992D8;
+}
+.btn-login {
+  margin-top: 25px;
+  color: #fff;
+  background: #1E4074;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.heading{
+  font-weight: 700;
+  color: #4992D8;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/registration.css">
+
+    <title>SecureX :: Secure Your Exam</title>
+</head>
+
+<body>
+
+
+    <!-- Logo -->
+    <!--* mt-5 = MarginTop x 5 (bootstrap helper class)-->
+    <div class="container mt-5 ">
+        <!--
+            * logo = our custom class
+         -->
+        <div class="row">
+
+              <div class="logo-title col-lg-6">
+                  <img src="../assets/images/FullLogo.svg" alt="SecureX-Logo was here">
+              </div>
+
+              <div class="logo-title col-lg-6">
+                  <h1>Registration</h1>
+              </div>
+
+                  <div class="w-100 horizontal-line mt-4 mb-5"></div>
+        </div>
+
+        <!--Form Start-->
+
+        <div class="row">
+
+            <!--Form Left Div Start -->
+
+            <div class="col-lg-6 left">
+
+              <form action="../assets/php/server.php" method="post">
+
+                <!--Name-->
+
+                <div class="form-group">
+                  <label for="fname">Full Name</label>
+                  <input type="text" class="form-control" name="fname" id="fname" placeholder="Enter your full name">
+                </div>
+
+                <!--Email-->
+
+                <div class="form-group">
+                  <label for="emailAddress">Email Address</label>
+                  <input type="text" class="form-control" name="emailAddress" id="emailAddress" placeholder="Enter email">
+                </div>
+
+                <!--Phone-->
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="number" class="form-control" name="phone" id="phone" placeholder="Enter your phone number">
+                </div>
+
+                <!--Academic Year-->
+
+                <div class="form-group">
+                  <label for="acYear">Academic Year</label>
+                  <select id="acYear" class="form-control">
+                    <option>First Year First Semester</option>
+                    <option>First Year Second Semester</option>
+                    <option>Second Year Third Semester</option>
+                    <option>Second Year Fourth Semester</option>
+                    <option>Third Year Fifth Semester</option>
+                    <option>Third Year Sixth Semester</option>
+                    <option>Fourth Year Seventh Semester</option>
+                    <option>Fourth Year Eighth Semester</option>
+                  </select>
+                </div>
+
+                <!--Stream-->
+
+                <div class="form-group">
+                  <label for="stream">Stream</label>
+                  <select id="stream" class="form-control">
+                    <option>Computer Science & Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Electrical and Electronics Engineering</option>
+                    <option>Mechanical Engineering</option>
+                    <option>BBA</option>
+                    <option>BCA</option>
+                  </select>
+                </div>
+
+
+
+        </div>
+
+        <!--Form Left Div Ends -->
+
+        <!--Form Right Div Start -->
+
+            <div class="col-lg-6 right">
+
+
+                <!--Name-->
+
+                <div class="form-group">
+                  <label for="roll">University Roll Number</label>
+                  <input type="number" class="form-control" name="roll" id="roll" placeholder="Enter your roll number">
+                </div>
+
+                <div class="form-group">
+                  <label for="gender">Gender</label>
+                  <select name="gender" id="gender" class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Transgender</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Create Password</label>
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Create your password">
+                </div>
+
+                <div class="form-group">
+                  <label for="confPassword">Retype Password</label>
+                  <input type="password" class="form-control" id="confPassword" placeholder="Retype your password">
+                </div>
+                <span class="upload-photo">Upload Photo</span>
+                <div class="input-group rounded-pill">
+
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control upload-photo">
+                <label id="upload-label" for="upload" class="font-weight-light upload-btn">Choose file</label>
+                  <div class="input-group-append">
+                      <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2"></i>
+                        <small>Browse</small></label>
+                  </div>
+                </div>
+
+                <script>
+                  var input = document.getElementById( 'upload' );
+                  var infoArea = document.getElementById( 'upload-label' );
+
+                  input.addEventListener( 'change', showFileName );
+                  function showFileName( event ) {
+                  var input = event.srcElement;
+                  var fileName = input.files[0].name;
+                  infoArea.textContent = 'File name: ' + fileName;
+                  }
+                </script>
+
+            </div>
+
+            <div class="row col-lg-12 ml-1">
+                  <div>
+                    <button class="btn btn-login" type="submit" value="submit">Register</button>
+                </div>
+            </div>
+
+              </form>
+
+            </div>
+
+            <!--Form Right Ends -->
+
+        </div>  <!--Row for Form Ends -->
+<!--
+        <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <button class="btn btn-login" type="submit" value="submit">Register</button>
+              </div>
+            </div>
+        </div>
+-->
+
+
+
+    </div>
+
+    <div class="container mt-3 contents">
+
+            <div class="w-100 horizontal-line mt-5"></div>
+
+                <div class="instructions w-100 mt-4 mb-4">
+                    <span>
+                        Contact your class teacher if you have any problem with filling up the form. <br>
+                        Fill up responsibly. Once filled up, cannot be changed after that.
+                    </span>
+                </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../assets/js/registration.js"
+</body>
+
+</html>
